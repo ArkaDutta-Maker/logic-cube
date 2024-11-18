@@ -13,14 +13,12 @@ export default function Home() {
       <section className="bg-white py-20 text-center">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-[#0a1f64] mb-6">
-            Leading Consultancy Partner
+            Leading transformative SAP solutions
             <br />
-            of the Year 2024
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8">
-            We help you connect your planning processes to make better, faster
-            and more agile decisions and accelerate performance, using
-            cutting-edge technology.
+            We aspire to redefine how businesses harness the power of SAP
+            technology to thrive in a constantly evolving world.
           </p>
           <Button
             size="lg"
@@ -40,14 +38,14 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#0a1f64] mb-4">
-                Strategic Planning
+                SAP Implementation and Integration
               </h3>
               <p className="text-gray-600 mb-4">
-                Develop winning strategies to stay ahead of the competition and
-                drive growth.
+                Seamlessly integrate SAP systems into your business processes
+                with our expert guidance.
               </p>
               <Link
-                href="/services/strategic-planning"
+                href="/services/"
                 className="text-[#ff5f00] hover:text-[#ff7c2a] font-semibold flex items-center"
               >
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -55,14 +53,14 @@ export default function Home() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#0a1f64] mb-4">
-                Financial Optimization
+                SAP Customization and Development
               </h3>
               <p className="text-gray-600 mb-4">
-                Optimize your financial processes for maximum efficiency and
-                profitability.
+                Get solutions tailored to your business needs with our SAP
+                customization expertise.
               </p>
               <Link
-                href="/services/financial-optimization"
+                href="/services"
                 className="text-[#ff5f00] hover:text-[#ff7c2a] font-semibold flex items-center"
               >
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -70,11 +68,11 @@ export default function Home() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold text-[#0a1f64] mb-4">
-                Digital Transformation
+                SAP ERP Migration Services
               </h3>
               <p className="text-gray-600 mb-4">
-                Leverage cutting-edge technology to transform your business and
-                stay competitive.
+                Upgrade your systems to the latest SAP ERP versions with minimal
+                disruption.
               </p>
               <Link
                 href="/services/digital-transformation"
@@ -103,10 +101,12 @@ export default function Home() {
             </Button>
           </div>
           <div className="bg-white/10 rounded-lg p-8">
-            <Image
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s"
+            <img
+              src="https://placehold.co/800x600"
               alt="Analytics Dashboard"
               className="w-full rounded-lg shadow-lg"
+              width={800}
+              height={600}
             />
           </div>
         </div>
