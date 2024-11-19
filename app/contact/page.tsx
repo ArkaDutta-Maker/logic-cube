@@ -106,7 +106,8 @@ export default function ContactUsPage() {
                     <MapPin className="h-6 w-6 text-[#FF4C00]" />
                     <div>
                       <p className="font-semibold">Address</p>
-                      <p> USA Street</p>
+                      <p>LogikCube - USA</p>
+                      <p>Street #</p>
                       <p>Atlanta, GA</p>
                     </div>
                   </div>

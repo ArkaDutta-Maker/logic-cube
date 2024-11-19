@@ -190,8 +190,8 @@ export default function Navbar() {
               <Link href="/services" className="block text-white py-2">
                 Services
               </Link>
-              <Link href="/solutions" className="block text-white py-2">
-                Solutions
+              <Link href="/industries" className="block text-white py-2">
+                Industries
               </Link>
               <Link href="/resources" className="block text-white py-2">
                 Resources

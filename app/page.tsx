@@ -41,17 +41,19 @@ export default function Home() {
             We aspire to redefine how businesses harness the power of SAP
             technology to thrive in a constantly evolving world.
           </p>
-          <Button
-            size="lg"
-            className="bg-[#ff5722] hover:bg-[#f4511e] text-white font-semibold px-8 py-3 text-lg"
-          >
-            Get Started
-          </Button>
+          <Link href="/contact">
+            <Button
+              size="lg"
+              className="bg-[#ff5722] hover:bg-[#f4511e] text-white font-semibold px-8 py-3 text-lg"
+            >
+              Get Started
+            </Button>
+          </Link>
         </div>
       </section>
 
       {/* Key Statistics */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
@@ -72,7 +74,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Services Section */}
       <section className="py-16 bg-gray-50">
