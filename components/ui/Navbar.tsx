@@ -186,88 +186,31 @@ export default function Navbar() {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="lg:hidden mt-4 space-y-4">
-              <Accordion
-                type="single"
-                collapsible
-                className="w-full [&>*]:border-b-0"
-              >
-                <AccordionItem value="services">
-                  <AccordionTrigger className="text-white py-2">
-                    Services
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <Link
-                      href="/services/consulting"
-                      className="block text-white py-2 pl-4"
-                    >
-                      Consulting Services
-                    </Link>
-                    <Link
-                      href="/services/implementation"
-                      className="block text-white py-2 pl-4"
-                    >
-                      Implementation
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="solutions">
-                  <AccordionTrigger className="text-white py-2">
-                    Solutions
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <Link
-                      href="/solutions/enterprise"
-                      className="block text-white py-2 pl-4"
-                    >
-                      Enterprise Solutions
-                    </Link>
-                    <Link
-                      href="/solutions/analytics"
-                      className="block text-white py-2 pl-4"
-                    >
-                      Analytics Platform
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="resources">
-                  <AccordionTrigger className="text-white py-2">
-                    Resources
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <Link
-                      href="/resources/blog"
-                      className="block text-white py-2 pl-4"
-                    >
-                      Blog
-                    </Link>
-                    <Link
-                      href="/resources/case-studies"
-                      className="block text-white py-2 pl-4"
-                    >
-                      Case Studies
-                    </Link>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="about">
-                  <Link
-                    className="text-white text-sm py-4 pl-0.5"
-                    href={"/about"}
-                  >
-                    About Us
-                  </Link>
-                </AccordionItem>
-              </Accordion>
-              <div className="pt-4">
+            <div className="lg:hidden py-4 space-y-2">
+              <Link href="/services" className="block text-white py-2">
+                Services
+              </Link>
+              <Link href="/solutions" className="block text-white py-2">
+                Solutions
+              </Link>
+              <Link href="/resources" className="block text-white py-2">
+                Resources
+              </Link>
+              <Link href="/about" className="block text-white py-2">
+                About Us
+              </Link>
+              <div className="pb-5">
                 <Input
                   type="search"
                   placeholder="Search..."
                   className="bg-white/10 border-white/20 text-white"
                 />
               </div>
-              <Button className="w-full bg-[#ff5f00] hover:bg-[#ff7c2a]">
-                Contact Us
-              </Button>
+              <Link href="/contact" passHref>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600">
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           )}
         </nav>

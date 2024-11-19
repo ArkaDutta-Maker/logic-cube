@@ -13,6 +13,7 @@ import {
   Layers,
   Lightbulb,
   Wrench,
+  BookOpenCheck,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -180,8 +181,19 @@ const services = [
     cta: "Ensure Optimal Performance",
     icon: <Wrench className="w-6 h-6 text-white" />,
   },
+  {
+    title: "SAP Analytics and Reporting",
+    description:
+      "Leverage the power of data to make informed business decisions with SAP analytics.",
+    features: [
+      "Real-time reporting and data visualization",
+      "Integration with SAP Analytics Cloud for predictive insights.",
+      "Data visualization to simplify complex business metrics.",
+    ],
+    cta: "Turn Data into Decisions with Advanced Analytics.",
+    icon: <BookOpenCheck className="w-6 h-6 text-white" />,
+  },
 ];
-
 const reasons = [
   {
     title: "Expert Team",

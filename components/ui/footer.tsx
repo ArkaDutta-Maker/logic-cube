@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
           <p>
-            &copy; {new Date().getFullYear()} LogicCube Consulting. All rights
+            &copy; {new Date().getFullYear()} LogikCube Consulting. All rights
             reserved.
           </p>
         </div>
