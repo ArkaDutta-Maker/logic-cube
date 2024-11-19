@@ -82,7 +82,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-[#1a237e] text-center mb-12">
             Our Services
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-center justify-center">
             <Card>
               <CardHeader>
                 <Database className="h-10 w-10 text-[#1a237e] mb-2" />
@@ -140,6 +140,19 @@ export default function Home() {
                 </Link>
               </CardContent>
             </Card>
+          </div>
+
+          <div className="flex justify-center">
+            <Link href="/services">
+              <Button
+                size="lg"
+                variant={"outline"}
+                className="mt-8 text-[#f4511e] border-[#f4511e] hover:bg-[#f4511e] hover:text-white items-center justify-center font-bold"
+              >
+                View All Services
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
