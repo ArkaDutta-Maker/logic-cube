@@ -29,6 +29,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,8 +44,8 @@ export default function Navbar() {
             href="mailto:info@consultingfirm.com"
             className="flex items-center text-sm hover:text-gray-200"
           >
-            <Mail className="h-4 w-4 mr-2" />
-            info@consultingfirm.com
+            <Mail className="h-4 w-4 mr-2 ml-5" />
+            info@logikcube.com{" "}
           </a>
           <div className="flex items-center space-x-4">
             <Link href="#" className="hover:text-gray-200">
@@ -68,8 +69,17 @@ export default function Navbar() {
         <nav className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold flex items-center">
-              <div className="w-10 h-10 bg-white rounded mr-2" />
-              LogicCube
+              <div className="w-10 h-10 bg-white rounded-full mr-2">
+                <Image
+                  src="/logikcube.png"
+                  width={50}
+                  height={50}
+                  layout="responsive"
+                  alt="The guitarist in the concert."
+                  className="w-10 h-10 rounded-full"
+                />
+              </div>
+              LogikCube
             </Link>
 
             {/* Desktop Navigation */}
@@ -77,66 +87,28 @@ export default function Navbar() {
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger
-                      className="text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        router.push("/services");
-                      }}
-                    >
-                      Services
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="grid gap-2 p-4 w-[400px]">
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/services/"
-                            className="block p-2 hover:bg-blue-700 rounded"
-                          >
-                            Consulting Services
-                          </Link>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/services/"
-                            className="block p-2 hover:bg-blue-700 rounded"
-                          >
-                            Implementation
-                          </Link>
-                        </NavigationMenuLink>
-                      </div>
-                    </NavigationMenuContent>
+                    <Link href="/services" legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={
+                          navigationMenuTriggerStyle() +
+                          "text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors"
+                        }
+                      >
+                        Services
+                      </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger
-                      className="text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        router.push("/solutions");
-                      }}
-                    >
-                      Solutions
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="grid gap-2 p-4 w-[400px]">
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/solutions"
-                            className="block p-2 hover:bg-blue-700 rounded"
-                          >
-                            Enterprise Solutions
-                          </Link>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                          <Link
-                            href="/solutions"
-                            className="block p-2 hover:bg-blue-700 rounded"
-                          >
-                            Analytics Platform
-                          </Link>
-                        </NavigationMenuLink>
-                      </div>
-                    </NavigationMenuContent>
+                    <Link href="/industries" legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={
+                          navigationMenuTriggerStyle() +
+                          "text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors"
+                        }
+                      >
+                        Industries
+                      </NavigationMenuLink>
+                    </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors">

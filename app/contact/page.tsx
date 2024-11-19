@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,15 +11,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin } from "lucide-react";
-
 export default function ContactUsPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
 
       <div className="relative h-[400px] mb-12">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-[#0A1E5C]/80" />
+        <div className="absolute inset-0 bg-[url(https://picsum.photos/id/6/1920/400/?blur=10)] bg-cover bg-center">
+          <div className="absolute inset-0 bg-[#100a5c62]" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
           <h1 className="text-5xl font-bold mb-4 text-center"> Contact Us</h1>
@@ -96,25 +96,18 @@ export default function ContactUsPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-4">
-                    <Phone className="h-6 w-6 text-[#FF4C00]" />
-                    <div>
-                      <p className="font-semibold">Phone</p>
-                      <p>+1 (555) 000-0000</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-4">
                     <Mail className="h-6 w-6 text-[#FF4C00]" />
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p>info@yourcompany.com</p>
+                      <p>info@logikcube.com </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
                     <MapPin className="h-6 w-6 text-[#FF4C00]" />
                     <div>
                       <p className="font-semibold">Address</p>
-                      <p>123 Business Street, Suite 100</p>
-                      <p>New York, NY 10001</p>
+                      <p> USA Street</p>
+                      <p>Atlanta, GA</p>
                     </div>
                   </div>
                 </CardContent>

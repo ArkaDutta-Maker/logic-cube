@@ -1,13 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Globe, Target } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 export default function AboutPage() {
   return (
     <div>
       <div className="relative h-[400px] mb-12">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-[#0A1E5C]/80" />
+        <div
+          className={
+            "absolute inset-0 bg-cover bg-center bg-[url(https://picsum.photos/id/6/1920/400/?blur=10)]"
+          }
+        >
+          <div className="absolute inset-0 bg-[#100a5c62]" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
           <h1 className="text-5xl font-bold mb-4 text-center">
@@ -21,29 +26,40 @@ export default function AboutPage() {
 
       <div className="container mx-auto px-4 space-y-24 pb-24">
         {/* Mission Section */}
-        <section className="text-center">
-          <h2 className="text-3xl font-bold mb-6 text-[#0A1E5C]">
-            Our Mission
-          </h2>
-          <p className="max-w-3xl mx-auto text-xl text-gray-600">
-            To empower organizations across industries to achieve operational
-            excellence and sustainable growth through world-class SAP services,
-            products, and expert consulting. By leveraging cutting-edge
-            technologies and proven methodologies, we aim to optimize business
-            processes and drive impactful digital transformation.
-          </p>
-        </section>
-
-        {/* Vision Section */}
-        <section className="text-center bg-[#0A1E5C] text-white py-16 rounded-lg">
-          <h2 className="text-3xl font-bold mb-6">Our Vision</h2>
-          <p className="max-w-3xl mx-auto text-xl">
-            To be a global leader in SAP services and solutions, recognized for
-            our commitment to innovation, excellence, and client success. We
-            aspire to redefine how businesses harness the power of SAP
-            technology to thrive in a constantly evolving world.
-          </p>
-        </section>
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-12 md:grid-cols-2 items-center">
+            <Card className="border-[#1e3a8a]/20">
+              <CardContent className="p-6">
+                <div className="flex flex-col space-y-4 items-center">
+                  <Target className="h-12 w-12 text-[#f97316] items-center" />
+                  <h2 className="text-2xl font-bold text-[#0A1E5C]">
+                    Our Mission
+                  </h2>
+                  <p className="text-muted-foreground">
+                    To empower organizations across industries to achieve
+                    operational excellence and sustainable growth through
+                    world-class SAP services, products, and expert consulting.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="border-[#1e3a8a]/20">
+              <CardContent className="p-6">
+                <div className="flex flex-col space-y-4 items-center">
+                  <Globe className="h-12 w-12 text-[#f97316]" />
+                  <h2 className="text-2xl font-bold text-[#0A1E5C]">
+                    Our Vision
+                  </h2>
+                  <p className="text-muted-foreground">
+                    To be a global leader in SAP services and solutions,
+                    recognized for our commitment to innovation, excellence, and
+                    success in redefining how businesses operate.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
 
         {/* Why Choose Us Section */}
         <section>
@@ -127,22 +143,24 @@ export default function AboutPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="text-center bg-[#0A1E5C] text-white rounded-lg p-12">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Connect with our experts and discover how LogicCube can help you
-            achieve your business goals.
-          </p>
+      </div>
+      <section className="text-center bg-[#0A1E5C] text-white p-12">
+        <h2 className="text-3xl font-bold mb-4">
+          Ready to Transform Your Business?
+        </h2>
+        <p className="text-lg mb-8 max-w-2xl mx-auto">
+          Connect with our experts and discover how LogicCube can help you
+          achieve your business goals.
+        </p>
+        <Link href="/contact">
           <Button
             size="lg"
             className="bg-[#FF4C00] hover:bg-[#FF4C00]/90 text-white"
           >
             SCHEDULE A CONSULTATION
           </Button>
-        </section>
-      </div>
+        </Link>
+      </section>
     </div>
   );
 }

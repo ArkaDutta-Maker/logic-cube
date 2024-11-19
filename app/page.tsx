@@ -20,12 +20,14 @@ export default function Home() {
             We aspire to redefine how businesses harness the power of SAP
             technology to thrive in a constantly evolving world.
           </p>
-          <Button
-            size="lg"
-            className="bg-[#ff5f00] hover:bg-[#ff7c2a] text-white font-semibold px-8 py-3 text-lg"
-          >
-            Get Started
-          </Button>
+          <Link href={"/contact"} passHref>
+            <Button
+              size="lg"
+              className="bg-[#ff5f00] hover:bg-[#ff7c2a] text-white font-semibold px-8 py-3 text-lg"
+            >
+              Get Started
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -153,12 +155,14 @@ export default function Home() {
             Contact us today for a free consultation and discover how we can
             help you achieve your goals.
           </p>
-          <Button
-            size="lg"
-            className="bg-[#ff5f00] hover:bg-[#ff7c2a] text-white font-semibold px-8 py-3 text-lg"
-          >
-            Schedule a Consultation
-          </Button>
+          <Link href={"/contact"}>
+            <Button
+              size="lg"
+              className="bg-[#ff5f00] hover:bg-[#ff7c2a] text-white font-semibold px-8 py-3 text-lg"
+            >
+              Schedule a Consultation
+            </Button>
+          </Link>
         </div>
       </section>
     </main>

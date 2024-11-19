@@ -1,313 +1,117 @@
 import Link from "next/link";
-import { Linkedin, Twitter, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  LinkedinIcon as LinkedIn,
+  Instagram,
+  CuboidIcon as Cube,
+} from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 pt-16 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          {/* Bedford Column */}
+    <footer className="bg-white text-gray-800 border-t border-gray-200">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="space-y-4">
+            <div className="flex items-center space-x-2">
+              <Image
+                className="h-8 w-8 text-[#1e3a8a]"
+                src={"/logikcube.png"}
+                width={100}
+                height={100}
+                alt="icon"
+              />
+              <h2 className="text-2xl font-bold text-[#1e3a8a]">LogikCube</h2>
+            </div>
+            <p className="text-sm text-gray-600">
+              Empowering businesses through innovative consulting solutions.
+            </p>
+          </div>
           <div>
-            <h3 className="text-[#0a1f64] font-semibold mb-4">Bedford</h3>
+            <h3 className="text-lg font-semibold mb-4 text-[#1e3a8a]">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-600 hover:text-[#0a1f64]"
+                  className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
                 >
                   Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/careers"
-                  className="text-gray-600 hover:text-[#0a1f64]"
+                  href="/industries"
+                  className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
                 >
-                  Careers
+                  Industries
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/team"
-                  className="text-gray-600 hover:text-[#0a1f64]"
+                  href="/about"
+                  className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
                 >
-                  Meet the team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/values"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Values
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/demo"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Watch a demo
+                  About Us
                 </Link>
               </li>
             </ul>
           </div>
-
-          {/* Anaplan Solutions Column */}
           <div>
-            <h3 className="text-[#0a1f64] font-semibold mb-4">
-              Anaplan Solutions
+            <h3 className="text-lg font-semibold mb-4 text-[#1e3a8a]">
+              Contact Us
             </h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/solutions/finance"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Finance
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/solutions/supply-chain"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Supply Chain
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/solutions/sales"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Sales
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/solutions/hr"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  HR & Workforce
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/solutions/marketing"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Marketing
-                </Link>
-              </li>
-            </ul>
+            <address className="not-italic text-sm text-gray-600">
+              <p>LogikCube - USA</p>
+              <p>Street #</p>
+              <p>Atlanta, GA</p>
+              <p>Email: info@logikcube.com </p>
+            </address>
           </div>
-
-          {/* Industry Solutions Column */}
           <div>
-            <h3 className="text-[#0a1f64] font-semibold mb-4">
-              Industry Solutions
+            <h3 className="text-lg font-semibold mb-4 text-[#1e3a8a]">
+              Follow Us
             </h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/industries/cpg-retail"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  CPG & Retail
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/financial-services"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Financial Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/telecom-media"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Telecomms & Media
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/it-software"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  IT & Software
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/travel"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Travel & Hospitality
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/professional-services"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Professional Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/healthcare"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Life Sciences & Healthcare
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/manufacturing"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Manufacturing
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/aviation"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Airlines & Aviation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/industries/logistics"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Transport & Logistics
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Resources Column */}
-          <div>
-            <h3 className="text-[#0a1f64] font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/resources/buyers-kits"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Buyer's Kits
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/whitepapers"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Whitepapers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/customer-stories"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Customer stories
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/demo-videos"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Demo videos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources/events"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Events & Webinars
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Customers Column */}
-          <div>
-            <h3 className="text-[#0a1f64] font-semibold mb-4">Customers</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/support"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/training"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Training
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hints-tips"
-                  className="text-gray-600 hover:text-[#0a1f64]"
-                >
-                  Hints & tips
-                </Link>
-              </li>
-            </ul>
-            <div className="flex space-x-4 mt-6">
-              <Link
-                href="https://linkedin.com"
-                className="text-[#0a1f64] hover:text-blue-700"
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                aria-label="Facebook"
               >
-                <Linkedin className="h-6 w-6" />
-              </Link>
-              <Link
-                href="https://twitter.com"
-                className="text-[#0a1f64] hover:text-blue-700"
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                aria-label="Twitter"
               >
                 <Twitter className="h-6 w-6" />
-              </Link>
-              <Link
-                href="https://youtube.com"
-                className="text-[#0a1f64] hover:text-blue-700"
+              </a>
+              <a
+                href="#"
+                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                aria-label="LinkedIn"
               >
-                <Youtube className="h-6 w-6" />
-              </Link>
+                <LinkedIn className="h-6 w-6" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
             </div>
           </div>
         </div>
-
-        {/* Bottom Section with Flags and Certifications */}
-        <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"></div>
+        <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
+          <p>
+            &copy; {new Date().getFullYear()} LogicCube Consulting. All rights
+            reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

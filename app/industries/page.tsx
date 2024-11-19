@@ -15,14 +15,15 @@ import {
   Package,
   Zap,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function IndustriesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="relative h-[400px] mb-12">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=400&width=1920')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-[#0A1E5C]/80" />
+        <div className="absolute inset-0 bg-[url(https://picsum.photos/id/6/1920/400/?blur=10)] bg-cover bg-center">
+          <div className="absolute inset-0 bg-[#100a5c62]" />
         </div>
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
           <h1 className="text-5xl font-bold mb-4 text-center">
@@ -117,12 +118,14 @@ export default function IndustriesPage() {
             solve them. Contact us today to learn how we can transform your
             operations with SAP solutions tailored for your domain.
           </p>
-          <Button
-            size="lg"
-            className="bg-[#FF4C00] hover:bg-[#FF4C00]/90 text-white"
-          >
-            Contact Us
-          </Button>
+          <Link href={"/contact"}>
+            <Button
+              size="lg"
+              className="bg-[#FF4C00] hover:bg-[#FF4C00]/90 text-white"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
