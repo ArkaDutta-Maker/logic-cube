@@ -16,7 +16,7 @@ export default function AboutPage() {
         </div>
         <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
           <h1 className="text-5xl font-bold mb-4 text-center">
-            About LogicCube
+            About LogikCube
           </h1>
           <p className="text-xl max-w-2xl">
             Empowering businesses through innovative consulting solutions
@@ -64,7 +64,7 @@ export default function AboutPage() {
         {/* Why Choose Us Section */}
         <section>
           <h2 className="text-3xl font-bold text-center mb-12 text-[#0A1E5C]">
-            Why Choose LogicCube?
+            Why Choose LogikCube?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -149,7 +149,7 @@ export default function AboutPage() {
           Ready to Transform Your Business?
         </h2>
         <p className="text-lg mb-8 max-w-2xl mx-auto">
-          Connect with our experts and discover how LogicCube can help you
+          Connect with our experts and discover how LogikCube can help you
           achieve your business goals.
         </p>
         <Link href="/contact">
