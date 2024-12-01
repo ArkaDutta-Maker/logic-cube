@@ -189,7 +189,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-video rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1556155092-8707de31f9c4"
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d/?blur=2"
                 alt="Case Study Preview"
                 className="object-cover"
               />
