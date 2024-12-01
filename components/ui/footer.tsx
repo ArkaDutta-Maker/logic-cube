@@ -65,8 +65,8 @@ export default function Footer() {
             </h3>
             <address className="not-italic text-sm text-gray-600">
               <p>LogikCube - USA</p>
-              <p>Street #</p>
-              <p>Atlanta, GA</p>
+              <p> 4165 Sierra Knolls Court,</p>
+              <p>Cumming, GA 30040</p>
               <p>Email: info@logikcube.com </p>
             </address>
           </div>
