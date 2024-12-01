@@ -157,7 +157,7 @@ export default function AboutPage() {
             size="lg"
             className="bg-[#FF4C00] hover:bg-[#FF4C00]/90 text-white"
           >
-            SCHEDULE A CONSULTATION
+            SCHEDULE CONSULTATION
           </Button>
         </Link>
       </section>
