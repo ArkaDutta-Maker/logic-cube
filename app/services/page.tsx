@@ -41,10 +41,10 @@ export default function ServicePage() {
             {services.map((service, index) => (
               <Card key={index} className="flex flex-col">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-[#0A1E5C] rounded-full flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 bg-[#3B1E54] rounded-full flex items-center justify-center mb-4">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-2xl font-bold text-[#0A1E5C]">
+                  <CardTitle className="text-2xl font-bold text-[#3B1E54]">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
@@ -75,17 +75,17 @@ export default function ServicePage() {
       {/* Why Choose Us Section */}
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#0A1E5C]">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#3B1E54]">
             Why Choose Our Services?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {reasons.map((reason, index) => (
               <Card key={index} className="text-center">
                 <CardContent className="pt-6">
-                  <div className="w-16 h-16 bg-[#0A1E5C] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[#3B1E54] rounded-full flex items-center justify-center mx-auto mb-4">
                     {reason.icon}
                   </div>
-                  <CardTitle className="text-xl font-bold text-[#0A1E5C] mb-2">
+                  <CardTitle className="text-xl font-bold text-[#3B1E54] mb-2">
                     {reason.title}
                   </CardTitle>
                   <CardDescription>{reason.description}</CardDescription>
@@ -97,7 +97,7 @@ export default function ServicePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#0A1E5C] text-white py-20">
+      <section className="bg-[#3B1E54] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Transform Your Business?
