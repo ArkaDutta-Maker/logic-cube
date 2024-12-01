@@ -35,7 +35,7 @@ export default function Home() {
       >
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Leading transformative SAP solutions
+            Leading transformative SAP Solutions
           </h1>
           <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-8">
             We aspire to redefine how businesses harness the power of SAP
