@@ -65,7 +65,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navigation */}
-      <header className="bg-[#0a1f64] text-white shadow-lg">
+      <header className="bg-[#3B1E54] text-white shadow-lg">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold flex items-center">
