@@ -30,7 +30,7 @@ export default function Home() {
         className="bg-cover bg-center bg-no-repeat text-white py-20 md:py-32"
         style={{
           backgroundImage:
-            "url(https://picsum.photos/id/22/1920/1080/?blur=10)",
+            "url(https://images.unsplash.com/photo-1519389950473-47ba0277781c)",
         }}
       >
         <div className="container mx-auto px-4 text-center">
@@ -79,13 +79,13 @@ export default function Home() {
       {/* Services Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#1a237e] text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#3B1E54] text-center mb-12">
             Our Services
           </h2>
           <div className="grid md:grid-cols-3 gap-8 items-center justify-center">
             <Card>
               <CardHeader>
-                <Database className="h-10 w-10 text-[#1a237e] mb-2" />
+                <Database className="h-10 w-10 text-[#3B1E54] mb-2" />
                 <CardTitle>SAP Implementation and Integration</CardTitle>
               </CardHeader>
               <CardContent>
@@ -104,7 +104,7 @@ export default function Home() {
             </Card>
             <Card>
               <CardHeader>
-                <BarChart className="h-10 w-10 text-[#1a237e] mb-2" />
+                <BarChart className="h-10 w-10 text-[#3B1E54] mb-2" />
                 <CardTitle>SAP Customization and Development</CardTitle>
               </CardHeader>
               <CardContent>
@@ -123,7 +123,7 @@ export default function Home() {
             </Card>
             <Card>
               <CardHeader>
-                <Shield className="h-10 w-10 text-[#1a237e] mb-2" />
+                <Shield className="h-10 w-10 text-[#3B1E54] mb-2" />
                 <CardTitle>SAP Migration Services</CardTitle>
               </CardHeader>
               <CardContent>
@@ -158,7 +158,7 @@ export default function Home() {
       </section>
 
       {/* Featured Case Study */}
-      <section className="py-16 bg-[#1a237e] text-white">
+      <section className="py-16 bg-[#3B1E54] text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -183,13 +183,13 @@ export default function Home() {
                   99.9% system availability
                 </li>
               </ul>
-              <Button className="mt-8 bg-white text-[#1a237e] hover:bg-gray-100">
+              <Button className="mt-8 bg-white text-[#3B1E54] hover:bg-gray-100">
                 Read Case Study
               </Button>
             </div>
             <div className="relative aspect-video rounded-lg overflow-hidden">
               <img
-                src="https://picsum.photos/600/400/"
+                src="https://images.unsplash.com/photo-1556155092-8707de31f9c4"
                 alt="Case Study Preview"
                 className="object-cover"
               />
@@ -201,26 +201,26 @@ export default function Home() {
       {/* Why Choose Us */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#1a237e] text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#3B1E54] text-center mb-12">
             Why Choose Us
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <Award className="h-12 w-12 text-[#1a237e] mx-auto mb-4" />
+              <Award className="h-12 w-12 text-[#3B1E54] mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">SAP Gold Partner</h3>
               <p className="text-gray-600">
                 Recognized excellence in SAP implementation and support services
               </p>
             </div>
             <div className="text-center">
-              <Users className="h-12 w-12 text-[#1a237e] mx-auto mb-4" />
+              <Users className="h-12 w-12 text-[#3B1E54] mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Expert Team</h3>
               <p className="text-gray-600">
                 300+ certified SAP consultants with deep industry expertise
               </p>
             </div>
             <div className="text-center">
-              <Globe className="h-12 w-12 text-[#1a237e] mx-auto mb-4" />
+              <Globe className="h-12 w-12 text-[#3B1E54] mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Global Reach</h3>
               <p className="text-gray-600">
                 Supporting clients across 50+ countries with local expertise
@@ -233,7 +233,7 @@ export default function Home() {
       {/* Latest Insights */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#1a237e] text-center mb-12">
+          <h2 className="text-3xl font-bold text-[#3B1E54] text-center mb-12">
             Latest Insights
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -279,7 +279,7 @@ export default function Home() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-[#1a237e] text-white py-16">
+      <section className="bg-[#3B1E54] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Transform Your Business?
