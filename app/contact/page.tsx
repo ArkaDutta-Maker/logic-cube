@@ -35,7 +35,7 @@ export default function ContactUsPage() {
             {/* Contact Form */}
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-[#0A1E5C]">
+                <CardTitle className="text-2xl font-bold text-[#3B1E54]">
                   Send Us a Message
                 </CardTitle>
                 <CardDescription>
@@ -90,7 +90,7 @@ export default function ContactUsPage() {
             <div className="space-y-8">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-[#0A1E5C]">
+                  <CardTitle className="text-2xl font-bold text-[#3B1E54]">
                     Contact Information
                   </CardTitle>
                 </CardHeader>
@@ -107,8 +107,8 @@ export default function ContactUsPage() {
                     <div>
                       <p className="font-semibold">Address</p>
                       <p>LogikCube - USA</p>
-                      <p>Street #</p>
-                      <p>Atlanta, GA</p>
+                      <p>4165 Sierra Knolls Court,</p>
+                      <p>Cumming, GA 30040</p>
                     </div>
                   </div>
                 </CardContent>
@@ -128,7 +128,7 @@ export default function ContactUsPage() {
       </div>
 
       {/* CTA Section */}
-      <section className="bg-[#0A1E5C] text-white py-20">
+      <section className="bg-[#3B1E54] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Ready to Transform Your Business?
