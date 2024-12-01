@@ -29,14 +29,14 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-[#1e3a8a]">
+            <h3 className="text-lg font-semibold mb-4 text-[#3B1E54]">
               Quick Links
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/services"
-                  className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                  className="text-gray-600 hover:text-[#3B1E54] transition-colors"
                 >
                   Services
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/industries"
-                  className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                  className="text-gray-600 hover:text-[#3B1E54] transition-colors"
                 >
                   Industries
                 </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                  className="text-gray-600 hover:text-[#3B1E54] transition-colors"
                 >
                   About Us
                 </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-[#1e3a8a]">
+            <h3 className="text-lg font-semibold mb-4 text-[#3B1E54]">
               Contact Us
             </h3>
             <address className="not-italic text-sm text-gray-600">
@@ -71,34 +71,34 @@ export default function Footer() {
             </address>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-[#1e3a8a]">
+            <h3 className="text-lg font-semibold mb-4 text-[#3B1E54]">
               Follow Us
             </h3>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                className="text-gray-600 hover:text-[#3B1E54] transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-6 w-6" />
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                className="text-gray-600 hover:text-[#3B1E54] transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-6 w-6" />
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                className="text-gray-600 hover:text-[#3B1E54] transition-colors"
                 aria-label="LinkedIn"
               >
                 <LinkedIn className="h-6 w-6" />
               </a>
               <a
                 href="#"
-                className="text-gray-600 hover:text-[#1e3a8a] transition-colors"
+                className="text-gray-600 hover:text-[#3B1E54] transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-6 w-6" />
