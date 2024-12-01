@@ -208,7 +208,7 @@ export default function Navbar() {
               </div>
               <Link href="/contact" passHref>
                 <Button className="w-full bg-orange-500 hover:bg-orange-600">
-                  Contact Us Again
+                  Contact Us
                 </Button>
               </Link>
             </div>
