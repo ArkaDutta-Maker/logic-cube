@@ -32,7 +32,7 @@ export default function AboutPage() {
               <CardContent className="p-6">
                 <div className="flex flex-col space-y-4 items-center">
                   <Target className="h-12 w-12 text-[#f97316] items-center" />
-                  <h2 className="text-2xl font-bold text-[#0A1E5C]">
+                  <h2 className="text-2xl font-bold text-[#3B1E54]">
                     Our Mission
                   </h2>
                   <p className="text-muted-foreground">
@@ -47,7 +47,7 @@ export default function AboutPage() {
               <CardContent className="p-6">
                 <div className="flex flex-col space-y-4 items-center">
                   <Globe className="h-12 w-12 text-[#f97316]" />
-                  <h2 className="text-2xl font-bold text-[#0A1E5C]">
+                  <h2 className="text-2xl font-bold text-[#3B1E54]">
                     Our Vision
                   </h2>
                   <p className="text-muted-foreground">
@@ -63,7 +63,7 @@ export default function AboutPage() {
 
         {/* Why Choose Us Section */}
         <section>
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#0A1E5C]">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#3B1E54]">
             Why Choose LogikCube?
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -81,7 +81,7 @@ export default function AboutPage() {
               <div key={index} className="flex items-start space-x-3">
                 <CheckCircle className="h-6 w-6 text-[#FF4C00] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-[#0A1E5C] mb-2">
+                  <h3 className="font-semibold text-[#3B1E54] mb-2">
                     {reason}
                   </h3>
                   <p className="text-gray-600">
@@ -95,7 +95,7 @@ export default function AboutPage() {
 
         {/* Core Values */}
         <section>
-          <h2 className="text-3xl font-bold text-center mb-12 text-[#0A1E5C]">
+          <h2 className="text-3xl font-bold text-center mb-12 text-[#3B1E54]">
             Our Core Values
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -127,12 +127,12 @@ export default function AboutPage() {
                 className={cn(
                   "text-center hover:shadow-lg transition-shadow",
                   index % 2 === 0
-                    ? "border-b-4 border-b-[#0A1E5C]"
+                    ? "border-b-4 border-b-[#3B1E54]"
                     : "border-b-4 border-b-[#FF4C00]"
                 )}
               >
                 <CardContent className="pt-6">
-                  <p className="font-bold text-[#0A1E5C]">{value[0]}</p>
+                  <p className="font-bold text-[#3B1E54]">{value[0]}</p>
                   <p className="text-sm mt-3 text-muted-foreground">
                     {value[1]}
                   </p>
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
         {/* CTA Section */}
       </div>
-      <section className="text-center bg-[#0A1E5C] text-white p-12">
+      <section className="text-center bg-[#3B1E54] text-white p-12">
         <h2 className="text-3xl font-bold mb-4">
           Ready to Transform Your Business?
         </h2>
