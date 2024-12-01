@@ -38,7 +38,7 @@ export default function Navbar() {
   return (
     <div>
       {/* Top Bar */}
-      <div className="bg-[#0a1f64] text-white py-2 px-4">
+      <div className="bg-[#3B1E54] text-white py-2 px-4">
         <div className="container mx-auto flex justify-between items-center">
           <a
             href="mailto:info@consultingfirm.com"
