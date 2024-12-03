@@ -44,20 +44,26 @@ export default function ContactUsPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
+                <form
+  className="space-y-4"
+  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-W6U3pK_XWrO9b26sXDoCtLExw3FfFov5sa-XBbsUXL3z6g/formResponse"
+  method="POST"
+  target="_blank"
+>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="first-name">First Name</Label>
-                      <Input id="first-name" placeholder="John" />
+                      <Input name="entry.1232019584" id="first-name" placeholder="John" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="last-name">Last Name</Label>
-                      <Input id="last-name" placeholder="Doe" />
+                      <Input name="entry.2126534044" id="last-name" placeholder="Doe" />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
                     <Input
+                      name="entry.497252458" 
                       id="email"
                       type="email"
                       placeholder="john.doe@example.com"
@@ -65,11 +71,12 @@ export default function ContactUsPage() {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="company">Company</Label>
-                    <Input id="company" placeholder="Acme Inc." />
+                    <Input name="entry.1137525808" id="company" placeholder="Acme Inc." />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone</Label>
                     <Input
+                      name="entry.1620140343" 
                       id="phone"
                       type="tel"
                       placeholder="+1 (555) 000-0000"
@@ -77,7 +84,7 @@ export default function ContactUsPage() {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" placeholder="How can we help you?" />
+                    <Textarea name="entry.405091941" id="message" placeholder="How can we help you?" />
                   </div>
                   <Button className="w-full bg-[#FF4C00] hover:bg-[#FF4C00]/90 text-white">
                     Send Message
