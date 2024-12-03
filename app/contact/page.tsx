@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -11,11 +12,40 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin } from "lucide-react";
+
 export default function ContactUsPage() {
+  const [formStatus, setFormStatus] = useState(""); // Tracks submission status
+
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // Prevent default form submission
+    const form = event.target;
+
+    const formData = new FormData(form); // Gather form data
+
+    try {
+      const response = await fetch(
+        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-W6U3pK_XWrO9b26sXDoCtLExw3FfFov5sa-XBbsUXL3z6g/formResponse",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (response.ok || response.status === 200) {
+        setFormStatus("success");
+        form.reset(); // Reset form fields
+      } else {
+        setFormStatus("error");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setFormStatus("error");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-
       <div className="relative h-[400px] mb-12">
         <div className="absolute inset-0 bg-[url(https://picsum.photos/id/6/1920/400/?blur=10)] bg-cover bg-center">
           <div className="absolute inset-0 bg-[#100a5c62]" />
@@ -28,6 +58,7 @@ export default function ContactUsPage() {
           </p>
         </div>
       </div>
+
       {/* Contact Form and Info Section */}
       <div className="py-5">
         <div className="container mx-auto px-4">
@@ -44,29 +75,25 @@ export default function ContactUsPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form
-  className="space-y-4"
-  action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-W6U3pK_XWrO9b26sXDoCtLExw3FfFov5sa-XBbsUXL3z6g/formResponse"
-  method="POST"
-  target="_blank"
->
+                <form className="space-y-4" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="first-name">First Name</Label>
-                      <Input name="entry.1232019584" id="first-name" placeholder="John" />
+                      <Input name="entry.1232019584" id="first-name" placeholder="John" required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="last-name">Last Name</Label>
-                      <Input name="entry.2126534044" id="last-name" placeholder="Doe" />
+                      <Input name="entry.2126534044" id="last-name" placeholder="Doe" required />
                     </div>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
                     <Input
-                      name="entry.497252458" 
+                      name="entry.497252458"
                       id="email"
                       type="email"
                       placeholder="john.doe@example.com"
+                      required
                     />
                   </div>
                   <div className="space-y-2">
@@ -76,7 +103,7 @@ export default function ContactUsPage() {
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone</Label>
                     <Input
-                      name="entry.1620140343" 
+                      name="entry.1620140343"
                       id="phone"
                       type="tel"
                       placeholder="+1 (555) 000-0000"
@@ -90,9 +117,14 @@ export default function ContactUsPage() {
                     Send Message
                   </Button>
                 </form>
+                {formStatus === "success" && (
+                  <p className="text-green-600 mt-4">Thank you! Your message has been sent.</p>
+                )}
+                {formStatus === "error" && (
+                  <p className="text-red-600 mt-4">Something went wrong. Please try again.</p>
+                )}
               </CardContent>
             </Card>
-        
 
             {/* Contact Information */}
             <div className="space-y-8">
@@ -121,7 +153,6 @@ export default function ContactUsPage() {
                   </div>
                 </CardContent>
               </Card>
-
               {/* Map Placeholder */}
               <Card>
                 <CardContent className="p-0">
@@ -134,25 +165,6 @@ export default function ContactUsPage() {
           </div>
         </div>
       </div>
-
-      {/* CTA Section */}
-      <section className="bg-[#3B1E54] text-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Our team of SAP experts is ready to help you achieve your business
-            goals. Let's start the conversation today.
-          </p>
-          <Button
-            size="lg"
-            className="bg-[#FF4C00] hover:bg-[#FF4C00]/90 text-white"
-          >
-            Schedule a Consultation
-          </Button>
-        </div>
-      </section>
     </div>
   );
 }
