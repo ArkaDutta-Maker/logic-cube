@@ -117,12 +117,6 @@ export default function ContactUsPage() {
                     Send Message
                   </Button>
                 </form>
-                {formStatus === "success" && (
-                  <p className="text-green-600 mt-4">Thank you! Your message has been sent.</p>
-                )}
-                {formStatus === "error" && (
-                  <p className="text-red-600 mt-4">Something went wrong. Please try again.</p>
-                )}
               </CardContent>
             </Card>
 
