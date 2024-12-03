@@ -90,42 +90,8 @@ export default function ContactUsPage() {
                     Send Message
                   </Button>
                 </form>
-                {/* Success Message */}
-<div id="form-success" className="hidden text-green-600 mt-4">
-  Thank you! Your message has been sent.
-</div>
-
-{/* JavaScript to Handle Form Submission */}
-<script>
-  document.getElementById('contact-form').addEventListener('submit', async function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    const form = event.target;
-
-    // Prepare form data
-    const formData = new FormData(form);
-
-    try {
-      // Submit the form data using fetch
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-      });
-
-      if (response.ok) {
-        // Hide the form and show the success message
-        form.reset();
-        document.getElementById('form-success').classList.remove('hidden');
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      alert('There was an error submitting your message.');
-    }
-  });
-</script>
               </CardContent>
             </Card>
-        
 
             {/* Contact Information */}
             <div className="space-y-8">
