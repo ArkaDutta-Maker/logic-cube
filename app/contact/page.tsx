@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -15,13 +15,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function ContactUsPage() {
-  const [formStatus, setFormStatus] = useState<"success" | "error" | "">("");
+const [formStatus, setFormStatus] = useState<"success" | "error" | "">(""); // Tracks submission status
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-
-    const formData = new FormData(form);
+const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault(); // Prevent default form submission
+  const form = event.currentTarget; // Type-safe reference to the form element
+  const formData = new FormData(form); // Gather form data
+};
 
     try {
       const response = await fetch(
@@ -31,8 +31,8 @@ export default function ContactUsPage() {
           body: formData,
         }
       );
-
-      if (response.ok) {
+  
+      if (response.ok || response.status === 200) {
         setFormStatus("success");
         form.reset();
       } else {

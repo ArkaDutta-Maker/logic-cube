@@ -91,7 +91,7 @@ export default function Navbar() {
                       <NavigationMenuLink
                         className={
                           navigationMenuTriggerStyle() +
-                          "text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors"
+                          "text-white bg-transparent px-2 py-1 rounded transition-colors"
                         }
                       >
                         Services
@@ -103,7 +103,7 @@ export default function Navbar() {
                       <NavigationMenuLink
                         className={
                           navigationMenuTriggerStyle() +
-                          "text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors"
+                          "text-white bg-transparent px-2 py-1 rounded transition-colors"
                         }
                       >
                         Industries
@@ -111,7 +111,7 @@ export default function Navbar() {
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors">
+                    <NavigationMenuTrigger className="text-white bg-transparent px-2 py-1 rounded transition-colors">
                       Resources
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -119,7 +119,7 @@ export default function Navbar() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/resources/blog"
-                            className="block p-2 hover:bg-blue-700 rounded"
+                            className="block p-2  rounded"
                           >
                             Blog
                           </Link>
@@ -127,7 +127,7 @@ export default function Navbar() {
                         <NavigationMenuLink asChild>
                           <Link
                             href="/resources/case-studies"
-                            className="block p-2 hover:bg-blue-700 rounded"
+                            className="block p-2  rounded"
                           >
                             Case Studies
                           </Link>
@@ -140,7 +140,7 @@ export default function Navbar() {
                       <NavigationMenuLink
                         className={
                           navigationMenuTriggerStyle() +
-                          "text-white bg-transparent hover:bg-blue-700 px-2 py-1 rounded transition-colors"
+                          "text-white bg-transparent px-2 py-1 rounded transition-colors"
                         }
                       >
                         About Us
