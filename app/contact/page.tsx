@@ -17,33 +17,31 @@ import { Phone, Mail, MapPin } from "lucide-react";
 export default function ContactUsPage() {
 const [formStatus, setFormStatus] = useState<"success" | "error" | "">(""); // Tracks submission status
 
-const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
   event.preventDefault(); // Prevent default form submission
-  const form = event.currentTarget; // Type-safe reference to the form element
-  const formData = new FormData(form); // Gather form data
-};
+  const form = event.currentTarget; // Safely get the form element
+  const formData = new FormData(form); // Collect form data
 
-    try {
-      const response = await fetch(
-        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-W6U3pK_XWrO9b26sXDoCtLExw3FfFov5sa-XBbsUXL3z6g/formResponse",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
-  
-      if (response.ok || response.status === 200) {
-        setFormStatus("success");
-        form.reset();
-      } else {
-        console.error("Failed to submit form. Status:", response.status);
-        setFormStatus("error");
+  try {
+    const response = await fetch(
+      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-W6U3pK_XWrO9b26sXDoCtLExw3FfFov5sa-XBbsUXL3z6g/formResponse",
+      {
+        method: "POST",
+        body: formData,
       }
-    } catch (error) {
-      console.error("Form submission error:", error);
+    );
+
+    if (response.ok || response.status === 200) {
+      setFormStatus("success");
+      form.reset(); // Clear all fields in the form
+    } else {
       setFormStatus("error");
     }
-  };
+  } catch (error) {
+    console.error("Form submission error:", error);
+    setFormStatus("error");
+  }
+};
 
   return (
     <div className="min-h-screen bg-white">
