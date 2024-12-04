@@ -33,14 +33,11 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
 
     if (response.ok || response.status === 200 || response.status === 204) {
       setFormStatus("success");
-      form.reset(); // Clear all fields in the form
     } else {
       setFormStatus("error");
-      form.reset();
     }
-  } catch (error) {
-    console.error("Form submission error:", error);
-    setFormStatus("error");
+  } finally {
+    form.reset();
   }
 };
 
