@@ -24,7 +24,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
 
   try {
     const response = await fetch(
-      "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe-W6U3pK_XWrO9b26sXDoCtLExw3FfFov5sa-XBbsUXL3z6g/formResponse",
+      "https://docs.google.com/forms/u/0/d/e/1FAIpQLScB_R-Ao0zw5LEbztGvphwX3zwjKFiUKQrQ_Nuw7wHv5cq0dQ/formResponse",
       {
         method: "POST",
         body: formData,
@@ -79,7 +79,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                     <div className="space-y-2">
                       <Label htmlFor="first-name">First Name</Label>
                       <Input
-                        name="entry.1232019584"
+                        name="entry.2041563673"
                         id="first-name"
                         placeholder="John"
                         required
@@ -88,7 +88,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                     <div className="space-y-2">
                       <Label htmlFor="last-name">Last Name</Label>
                       <Input
-                        name="entry.2126534044"
+                        name="entry.1070200108"
                         id="last-name"
                         placeholder="Doe"
                         required
@@ -98,7 +98,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
                     <Input
-                      name="entry.497252458"
+                      name="entry.1872837399"
                       id="email"
                       type="email"
                       placeholder="john.doe@example.com"
@@ -108,7 +108,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                   <div className="space-y-2">
                     <Label htmlFor="company">Company</Label>
                     <Input
-                      name="entry.1137525808"
+                      name="entry.1162303086"
                       id="company"
                       placeholder="Acme Inc."
                     />
@@ -116,7 +116,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone</Label>
                     <Input
-                      name="entry.1620140343"
+                      name="entry.1839311840"
                       id="phone"
                       type="tel"
                       placeholder="+1 (555) 000-0000"
@@ -125,7 +125,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
                     <Textarea
-                      name="entry.405091941"
+                      name="entry.76577904"
                       id="message"
                       placeholder="How can we help you?"
                     />
