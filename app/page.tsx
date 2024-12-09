@@ -163,7 +163,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Success Story: Global Manufacturing Leader
+                Success Story: Global Manufacturing process optimization with S/4HANA
               </h2>
               <p className="text-xl mb-6">
                 Learn how we helped a Fortune 500 manufacturer streamline their
