@@ -37,6 +37,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
       setFormStatus("error");
     }
   } finally {
+    setFormStatus("success");
     form.reset();
   }
 };
